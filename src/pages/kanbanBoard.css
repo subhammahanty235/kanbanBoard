@@ -1,0 +1,60 @@
+.kanban_board{
+    /* width: 100%; */
+    height: calc(100vh - 60px);
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    column-gap: 25px;
+    overflow-x: scroll;
+    /* row-gap: 10px; */
+
+}
+.kanban_board_row{
+    width: 25%;
+    overflow: hidden;
+    
+    
+    /* border: 1px solid black; */
+}
+.row_header{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row_header .header_left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* background-color: aquamarine; */
+    gap: 8px;
+}
+.row_header .header_right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header_icon{
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    /* background-color: blue; */
+}
+.header_left .label{
+    font-weight: 500;
+}
+.header_left .length_of_data{
+    opacity: 0.8;
+}
+
+.kanban_board_row_inner{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 80%;
+    overflow: scroll;
+}
+.kanban_board_row_inner::-webkit-scrollbar {
+    display: none;
+}
