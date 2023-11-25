@@ -45,7 +45,7 @@ const InternalDropdownGrouping = ({group , setgroup}) => {
                     <div className="internal_dropdown_main1">
                         {
                             options?.map((op) => {
-                                return <div className="option_button" onClick={()=>{
+                                return <div key={op} className="option_button" onClick={()=>{
                                     setgroup(op)
                                     setShowDropdown(false)
                                 }}>
@@ -74,7 +74,7 @@ const InternalDropdownOrdering = ({order, setorder}) => {
                     <div className="internal_dropdown_main2">
                         {
                             options?.map((op) => {
-                                return <div className="option_button" onClick={()=>{
+                                return <div key={op} className="option_button" onClick={()=>{
                                     setorder(op)
                                     setShowDropdown(false)
                                 }}>

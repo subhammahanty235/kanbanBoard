@@ -71,7 +71,7 @@ const KanbanBoard = () => {
                                 </div>
                                 <div className='kanban_board_row_inner'>
                                     {filterTicketsByStatus(label).map(ticket => (
-                                        <Card cardData={ticket} />
+                                        <Card key={ticket.id} cardData={ticket} />
                                     ))}
                                 </div>
                             </div>
